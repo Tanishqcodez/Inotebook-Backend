@@ -17,12 +17,12 @@ router.post('/createuser', [
     body('password', 'Password must be atleast 5 char').isLength({ min: 5 })
 ],
     async (req, res) => {
-        //Validating user entry points and saving in mongodb if no error
-        // if there are error
+        //Checking for Error if
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
             return res.status(400).json({ success: false,errors: errors.array() });
         }
+        //If no error
         try {
             //checking whether the email exits or not
             let user = await User.findOne({ email: req.body.email })

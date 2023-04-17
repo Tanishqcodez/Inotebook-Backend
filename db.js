@@ -7,7 +7,6 @@ const mongoUri = 'mongodb+srv://Tanishq:rtyvkPVHwlsdjuMX@inotebook.bm98zhd.mongo
 const connectToMongo = async ()=>{
     await mongoose.connect(mongoUri).then( console.log('Database connected'))
 } 
-  
 
 
 module.exports = connectToMongo
