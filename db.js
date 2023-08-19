@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 // const mongoUri = 'mongodb://127.0.0.1/inotebook'
-const mongoUri = 'mongodb+srv://Tanishq:rtyvkPVHwlsdjuMX@inotebook.bm98zhd.mongodb.net/?retryWrites=true&w=majority'
+const mongoUri = 'mongodb+srv://Tanishq:rLOGH8y301jamhnW@inotebook.bm98zhd.mongodb.net/inotebook'
 
 
 
